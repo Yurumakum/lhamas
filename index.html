@@ -1,0 +1,1009 @@
+<!DOCTYPE html><html lang="pt-BR" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Enciclopédico &amp; Manejo: Lhamas e Camelídeos Sul-Americanos</title>
+  <!-- Google Fonts & Tailwind CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            earth: {
+              50: '#FBF9F5',
+              100: '#F5EFEB',
+              200: '#EBDCD0',
+              300: '#DEC4B0',
+              400: '#C79F81',
+              500: '#A87955',
+              600: '#8A5D3B',
+              700: '#6E462A',
+              800: '#4D2F1A',
+              900: '#2C1A0E',
+              950: '#1A0F07',
+            },
+            andean: {
+              teal: '#1F5660',
+              clay: '#C85A32',
+              gold: '#D99B26',
+              sage: '#5F7A61',
+              sky: '#4A7C9D',
+              night: '#131B23'
+            }
+          },
+          boxShadow: {
+            '2xs': '0 1px 0 0 rgb(0 0 0 / 0.04)',
+            xs: '0 1px 2px 0 rgb(0 0 0 / 0.06)',
+          },
+          backdropBlur: { xs: '2px' },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(222, 196, 176, 0.4);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #DEC4B0;
+      border-radius: 9999px;
+    }
+    html, body { overflow-x: hidden; }
+    img { max-width: 100%; }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.025em;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body class="bg-earth-50 text-earth-900 font-sans antialiased selection:bg-andean-clay selection:text-white custom-scrollbar">
+
+  <!-- TOP APP HEADER / BARRA DE NAVEGAÇÃO -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-earth-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3 min-w-0 shrink">
+        <div class="w-11 h-11 shrink-0 rounded-2xl bg-gradient-to-tr from-earth-700 to-andean-clay flex items-center justify-center text-white shadow-md shadow-earth-800/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+          </svg>
+        </div>
+        <div>
+          <span class="block truncate text-xs font-bold uppercase tracking-wider text-andean-clay">Dossiê Técnico &amp; Enciclopédia</span>
+          <h1 class="truncate text-base sm:text-xl font-bold font-serif text-earth-900 leading-tight">Camelídeos Sul-Americanos &amp; Lhamas</h1>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <nav class="hidden xl:flex items-center gap-0.5 text-[13px] shrink-0 whitespace-nowrap font-medium text-earth-700">
+        <a href="#quem-sao" class="px-3 py-2 rounded-lg hover:text-earth-950 hover:bg-earth-100 transition-colors">Taxonomia</a>
+        <a href="#comparativo" class="px-3 py-2 rounded-lg hover:text-earth-950 hover:bg-earth-100 transition-colors">4 Camelídeos</a>
+        <a href="#habitat" class="px-3 py-2 rounded-lg hover:text-earth-950 hover:bg-earth-100 transition-colors">Habitat &amp; Ecologia</a>
+        <a href="#comportamento-reproducao" class="px-3 py-2 rounded-lg hover:text-earth-950 hover:bg-earth-100 transition-colors">Reprodução &amp; Fisiologia</a>
+        <a href="#criacao-manejo" class="px-3 py-2 rounded-lg hover:text-earth-950 hover:bg-earth-100 transition-colors">Criação &amp; Manejo</a>
+      </nav>
+
+      <div class="hidden lg:flex xl:hidden 2xl:flex items-center gap-3 shrink-0">
+        <span class="inline-flex items-center gap-1.5 whitespace-nowrap px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Guia Veterinário &amp; Zootécnico
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: IMPACTO VISUAL COM AS IMAGENS ENVIADAS -->
+  <section class="relative bg-gradient-to-b from-earth-100/60 to-earth-50 border-b border-earth-200/60 py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-earth-300 text-earth-700 text-xs font-semibold shadow-xs">
+            <span class="px-2 py-0.5 rounded-md bg-andean-teal text-white text-[10px] uppercase font-bold tracking-wide">Lama glama</span>
+            <span>Espécie doméstica dos Andes Centrais</span>
+          </div>
+
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold font-serif text-earth-950 tracking-tight leading-[1.12]">
+            Resistência, Nobreza e <span class="text-andean-clay italic">Evolução Andina</span>.
+          </h2>
+
+          <p class="text-lg text-earth-700 leading-relaxed max-w-2xl font-normal">
+            Criadas pela humanidade há quase 5.000 anos na Cordilheira dos Andes, as lhamas (<em class="font-serif">Lama glama</em>) são gigantes gentis de baixo impacto ambiental, notáveis animais de carga, guardiãs devotadas de rebanhos e produtoras de lã térmica e acolhedora.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-white border border-earth-200/80 shadow-xs">
+              <span class="block text-xl lg:text-2xl font-bold font-serif whitespace-nowrap text-andean-clay">115 - 180 kg</span>
+              <span class="text-xs text-earth-600 font-medium">Maior camelídeo sul-americano</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-earth-200/80 shadow-xs">
+              <span class="block text-xl lg:text-2xl font-bold font-serif whitespace-nowrap text-andean-teal">~342 dias</span>
+              <span class="text-xs text-earth-600 font-medium">Gestação com 1 filhote diurno</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-white border border-earth-200/80 shadow-xs">
+              <span class="block text-xl lg:text-2xl font-bold font-serif whitespace-nowrap text-andean-gold">C1, C2, C3</span>
+              <span class="text-xs text-earth-600 font-medium">3 câmaras gástricas adaptadas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colagem das fotos fornecidas -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-3.5 relative w-full max-w-xl mx-auto">
+          <div class="space-y-3.5">
+            <div class="group relative rounded-2xl overflow-hidden shadow-md border-2 border-white aspect-[3/4]">
+              <img src="image0.jpg" alt="Lhama jovem expressiva" class="w-full h-full object-cover object-[center_25%] transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                <span class="text-white text-xs font-semibold">Orelhas em banana &amp; pelagem mista</span>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden shadow-md border-2 border-white aspect-[4/3]">
+              <img src="F78F7022-7D5A-4CDC-9D2A-B47D9FD43CD4.jpg" alt="Rebanho de lhamas nos Andes com vulcão nevado" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                <span class="text-white text-xs font-semibold">Altiplano Andino (Puna)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-3.5 pt-6">
+            <div class="group relative rounded-2xl overflow-hidden shadow-md border-2 border-white aspect-[4/3]">
+              <img src="79d3905e-8ad9-4d02-9694-20438d54ea5a.jfif" alt="Caravana tradicional de lhamas de carga nos Andes" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                <span class="text-white text-xs font-semibold">Animal de carga secular</span>
+              </div>
+            </div>
+            <div class="group relative rounded-2xl overflow-hidden shadow-md border-2 border-white aspect-[3/4]">
+              <img src="image1.jpg" alt="Lhama em curral" class="w-full h-full object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-105">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                <span class="text-white text-xs font-semibold">Docilidade e manejo calmo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 py-16 space-y-20">
+
+    <!-- SEÇÃO 1: QUEM SÃO & TAXONOMIA -->
+    <section id="quem-sao" class="scroll-mt-24 space-y-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between border-b border-earth-200 pb-5 gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest font-bold text-andean-teal">Filogenia e Sistemática</span>
+          <h3 class="text-3xl font-serif font-bold text-earth-950">1. Quem são as Lhamas? Classificação Taxonômica</h3>
+        </div>
+        <p class="text-sm text-earth-600 max-w-md">
+          Integrantes da família Camelidae, compartilham ancestralidade comum com camelos e dromedários do Velho Mundo, porém integram a tribo exclusiva <strong class="text-earth-900">Lamini</strong>.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Árvore Taxonômica Interativa / Visual -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-5 sm:p-8 border border-earth-200/90 shadow-sm space-y-6">
+          <div class="flex items-center justify-between pb-4 border-b border-earth-100">
+            <h4 class="font-bold text-earth-900 flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-andean-clay"></span>
+              Classificação Científica Completa
+            </h4>
+            <span class="font-mono text-xs text-earth-500">ICZN Linnaeus, 1758</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 font-mono text-xs">
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Reino:</span>
+              <span class="font-semibold text-earth-900 text-right">Animalia (Animais)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Filo:</span>
+              <span class="font-semibold text-earth-900 text-right">Chordata (Cordados)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Classe:</span>
+              <span class="font-semibold text-earth-900 text-right">Mammalia (Mamíferos)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Infraclasse:</span>
+              <span class="font-semibold text-earth-900 text-right">Placentalia (Placentários)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Ordem:</span>
+              <span class="font-semibold text-earth-900 text-right">Artiodactyla (Cetartiodactyla)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Subordem:</span>
+              <span class="font-semibold text-earth-900 text-right">Tylopoda (Tilópodes)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Família:</span>
+              <span class="font-semibold text-earth-900 text-right">Camelidae (Camelídeos)</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Subfamília:</span>
+              <span class="font-semibold text-earth-900 text-right">Camelinae</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Tribo:</span>
+              <span class="font-semibold text-earth-900 text-right">Lamini</span>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200/60 flex justify-between items-center gap-3">
+              <span class="text-earth-500 font-sans font-medium shrink-0">Gênero:</span>
+              <span class="font-semibold text-earth-900 text-right">Lama</span>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-900 text-white flex flex-wrap items-center justify-between gap-3">
+            <div>
+              <span class="text-[11px] uppercase tracking-wider text-earth-400 font-mono">Espécie Plena</span>
+              <h5 class="text-lg font-serif italic font-bold">Lama glama <span class="text-xs font-normal not-italic font-sans text-earth-300">(Linnaeus, 1758)</span></h5>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-andean-clay text-white text-xs font-semibold">100% Domesticada</span>
+          </div>
+
+          <p class="text-xs text-earth-600 leading-relaxed">
+            * <strong>Nota Biológica:</strong> A subordem <em>Tylopoda</em> ("pés com almofadas") difere dos ruminantes convencionais porque os camelídeos não possuem cascos bipartidos rígidos com queratina maciça, mas sim unhas sobre almofadas de coxim plantar cartilaginoso.
+          </p>
+        </div>
+
+        <!-- Linhagem Evolutiva Guanaco -> Lhama & Vicunha -> Alpaca -->
+        <div class="lg:col-span-5 bg-gradient-to-br from-earth-100 to-white rounded-3xl p-5 sm:p-8 border border-earth-200 shadow-sm space-y-6">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-full bg-andean-teal text-white flex items-center justify-center font-bold text-xs">DNA</span>
+            <h4 class="font-bold text-earth-900 text-base">Ancestralidade &amp; Domesticação</h4>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Relação 1 -->
+            <div class="p-4 rounded-2xl bg-white border border-earth-200/80 shadow-2xs space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="badge-pill bg-amber-100 text-amber-900">Ancestral Selvagem</span>
+                <span class="text-xs font-mono text-earth-500">→ Doméstica</span>
+              </div>
+              <div class="flex items-center justify-between text-sm font-semibold">
+                <span class="text-earth-900">Guanaco <em class="text-xs font-serif text-earth-600 font-normal">(Lama guanicoe)</em></span>
+                <span class="text-andean-clay font-bold">→ Lhama</span>
+              </div>
+              <p class="text-xs text-earth-600">
+                O guanaco selvagem foi domesticado há cerca de 4.500–5.000 anos, selecionado pela robustez corporal e capacidade de carregar carga em alta altitude.
+              </p>
+            </div>
+
+            <!-- Relação 2 -->
+            <div class="p-4 rounded-2xl bg-white border border-earth-200/80 shadow-2xs space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="badge-pill bg-sky-100 text-sky-900">Ancestral Selvagem</span>
+                <span class="text-xs font-mono text-earth-500">→ Doméstica</span>
+              </div>
+              <div class="flex items-center justify-between text-sm font-semibold">
+                <span class="text-earth-900">Vicunha <em class="text-xs font-serif text-earth-600 font-normal">(Vicugna vicugna)</em></span>
+                <span class="text-andean-teal font-bold">→ Alpaca</span>
+              </div>
+              <p class="text-xs text-earth-600">
+                A vicunha deu origem à alpaca através da seleção artificial milenar focada na densidade, suavidade e riqueza de cores da fibra têxtil.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 2: QUADRO COMPARATIVO DOS 4 CAMELÍDEOS SUL-AMERICANOS -->
+    <section id="comparativo" class="scroll-mt-24 space-y-8">
+      <div class="border-b border-earth-200 pb-5">
+        <span class="text-xs uppercase tracking-widest font-bold text-andean-clay">Morfologia e Diferenciação</span>
+        <h3 class="text-3xl font-serif font-bold text-earth-950">2. Diferenças entre os 4 Camelídeos Sul-Americanos</h3>
+        <p class="text-sm text-earth-600 mt-1 max-w-3xl">
+          Como identificar com exatidão lhamas, alpacas, vicunhas e guanacos através do porte, orelhas, tipo de fibra e status ecológico (doméstico vs selvagem).
+        </p>
+      </div>
+
+      <!-- Grid dos 4 Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        
+        <!-- CARD 1: LHAMA -->
+        <div class="bg-white rounded-3xl border-2 border-andean-clay shadow-sm overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="p-6 bg-gradient-to-b from-earth-100/80 to-white border-b border-earth-200/70">
+              <div class="flex justify-between items-center gap-2 mb-3 min-h-[2.75rem]">
+                <span class="badge-pill bg-andean-clay text-white">Doméstico</span>
+                <span class="text-xs font-mono text-earth-500 text-right">Maior porte</span>
+              </div>
+              <h4 class="text-2xl font-serif font-bold text-earth-950">Lhama</h4>
+              <p class="text-xs font-serif italic text-earth-600">Lama glama</p>
+            </div>
+
+            <div class="p-6 space-y-4 text-xs">
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🍌 Orelhas &amp; Focinho:</span>
+                <p class="text-earth-700">Orelhas longas e curvadas em formato de <strong class="text-earth-900">banana</strong>. Focinho e pescoço longos e eretos.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">⚖️ Altura &amp; Peso:</span>
+                <p class="text-earth-700"><strong>1,7 m a 1,8 m</strong> de altura. Peso de <strong>115 kg a 180 kg</strong>. É o mais pesado e forte dos quatro.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🧶 Pelagem &amp; Cores:</span>
+                <p class="text-earth-700">Pelo grosso, densidade média. Grande variedade: branco, preto, castanho, bege, cinza e padrões malhados/manchados.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🎯 Função Principal:</span>
+                <p class="text-earth-700">Animal de carga secular nos Andes, proteção de rebanho (guarda), lã rústica térmica, companhia e terapia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-earth-50 border-t border-earth-200/70 text-center">
+            <span class="text-[11px] font-semibold text-andean-clay uppercase tracking-wider">Ancestral: Guanaco</span>
+          </div>
+        </div>
+
+        <!-- CARD 2: ALPACA -->
+        <div class="bg-white rounded-3xl border border-earth-200 shadow-sm overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="p-6 bg-gradient-to-b from-sky-50 to-white border-b border-earth-200/70">
+              <div class="flex justify-between items-center gap-2 mb-3 min-h-[2.75rem]">
+                <span class="badge-pill bg-sky-700 text-white">Doméstico</span>
+                <span class="text-xs font-mono text-earth-500 text-right">Mais peludo</span>
+              </div>
+              <h4 class="text-2xl font-serif font-bold text-earth-950">Alpaca</h4>
+              <p class="text-xs font-serif italic text-earth-600">Vicugna pacos</p>
+            </div>
+
+            <div class="p-6 space-y-4 text-xs">
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🧸 Orelhas &amp; Focinho:</span>
+                <p class="text-earth-700">Orelhas curtas, retas e pontiagudas. Focinho curto e arredondado, conferindo aspecto dócil e jovial ("filhote").</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">⚖️ Altura &amp; Peso:</span>
+                <p class="text-earth-700"><strong>1,2 m a 1,5 m</strong> de altura. Peso entre <strong>50 kg e 85 kg</strong> (bem menor que a lhama).</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🧶 Pelagem &amp; Variações:</span>
+                <p class="text-earth-700">Fibra extremamente densa, fina, macia e quente. Possui 22 cores reconhecidas. Variedades: <em>Huacaya</em> (fofa) e <em>Suri</em> (ondulada).</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🎯 Função Principal:</span>
+                <p class="text-earth-700">Produção têxtil de alto luxo internacional. Não é adequada para carga pesada.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-earth-50 border-t border-earth-200/70 text-center">
+            <span class="text-[11px] font-semibold text-sky-800 uppercase tracking-wider">Ancestral: Vicunha</span>
+          </div>
+        </div>
+
+        <!-- CARD 3: VICUNHA -->
+        <div class="bg-white rounded-3xl border border-earth-200 shadow-sm overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="p-6 bg-gradient-to-b from-amber-50 to-white border-b border-earth-200/70">
+              <div class="flex justify-between items-center gap-2 mb-3 min-h-[2.75rem]">
+                <span class="badge-pill bg-amber-600 text-white">Selvagem Protegido</span>
+                <span class="text-xs font-mono text-earth-500 text-right">O menor de todos</span>
+              </div>
+              <h4 class="text-2xl font-serif font-bold text-earth-950">Vicunha</h4>
+              <p class="text-xs font-serif italic text-earth-600">Vicugna vicugna</p>
+            </div>
+
+            <div class="p-6 space-y-4 text-xs">
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">✨ Características &amp; Dentes:</span>
+                <p class="text-earth-700">Padrão bicolor: castanho dourado no dorso e bege/creme no peito. Dentes incisivos com <strong>crescimento contínuo</strong>.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">⚖️ Altura &amp; Peso:</span>
+                <p class="text-earth-700"><strong>1,0 m a 1,2 m</strong> de altura. Peso de apenas <strong>35 kg a 55 kg</strong>. Esbelta e muito ágil.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">👑 Lã Mais Rara do Planeta:</span>
+                <p class="text-earth-700">Fibra ultraleve e preciosa (apenas 200–500g a cada 2 anos). Sagrada pelos Incas, manejo exclusivo via <em>Chaccu</em>.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🏞️ Modo de Vida:</span>
+                <p class="text-earth-700">Punas remotas andinas. Grupos familiares (1 macho dominante + 5 a 10 fêmeas). Símbolo nacional do Peru.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-earth-50 border-t border-earth-200/70 text-center">
+            <span class="text-[11px] font-semibold text-amber-700 uppercase tracking-wider">Origem da Alpaca</span>
+          </div>
+        </div>
+
+        <!-- CARD 4: GUANACO -->
+        <div class="bg-white rounded-3xl border border-earth-200 shadow-sm overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="p-6 bg-gradient-to-b from-stone-100 to-white border-b border-earth-200/70">
+              <div class="flex justify-between items-center gap-2 mb-3 min-h-[2.75rem]">
+                <span class="badge-pill bg-stone-700 text-white">Selvagem</span>
+                <span class="text-xs font-mono text-earth-500 text-right">Mais ágil &amp; alto</span>
+              </div>
+              <h4 class="text-2xl font-serif font-bold text-earth-950">Guanaco</h4>
+              <p class="text-xs font-serif italic text-earth-600">Lama guanicoe</p>
+            </div>
+
+            <div class="p-6 space-y-4 text-xs">
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🏃 Morfologia &amp; Porte:</span>
+                <p class="text-earth-700">Mais alto e esguio que a lhama, pernas longas e musculosas. Altura de <strong>1,8 m a 1,9 m</strong> e <strong>90 a 140 kg</strong>.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🏔️ Sangue da Altitude:</span>
+                <p class="text-earth-700">Pelagem castanho claro no dorso, ventre branco e cabeça cinza. Sangue com altíssima taxa de eritrócitos para ar rarefeito.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">🌵 Hábitat &amp; Resiliência:</span>
+                <p class="text-earth-700">Da Patagônia aos Andes e Deserto do Atacama. Passa dias sem água líquida, absorvendo umidade das plantas.</p>
+              </div>
+
+              <div>
+                <span class="font-bold text-earth-900 block mb-1">👥 Estrutura Social:</span>
+                <p class="text-earth-700">Vive em haréns (1 macho dominante + harém) ou bandos de machos solteiros. Ancestral direto da lhama.</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-earth-50 border-t border-earth-200/70 text-center">
+            <span class="text-[11px] font-semibold text-stone-700 uppercase tracking-wider">Origem da Lhama</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tabela Resumo Visual Rápida -->
+      <div class="bg-white rounded-3xl border border-earth-200/80 shadow-xs overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full min-w-[860px] text-left text-xs border-collapse">
+            <thead class="bg-earth-100/70 text-earth-800 uppercase font-bold tracking-wider border-b border-earth-200">
+              <tr>
+                <th class="py-4 px-6">Espécie</th>
+                <th class="py-4 px-6">Condição</th>
+                <th class="py-4 px-6">Altura Média</th>
+                <th class="py-4 px-6">Peso Adulto</th>
+                <th class="py-4 px-6">Orelhas</th>
+                <th class="py-4 px-6">Qualidade da Fibra</th>
+                <th class="py-4 px-6">Uso Tradicional</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-earth-100 text-earth-700">
+              <tr class="bg-earth-50/40 hover:bg-earth-50 transition-colors">
+                <td class="py-4 px-6 font-bold text-earth-950 whitespace-nowrap"><span class="inline-flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-andean-clay"></span> Lhama</span></td>
+                <td class="py-4 px-6"><span class="badge-pill bg-emerald-100 text-emerald-800">Doméstica</span></td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-medium">1,70 m – 1,80 m</td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-bold text-andean-clay">115 – 180 kg</td>
+                <td class="py-4 px-6">Longas e arqueadas ("banana")</td>
+                <td class="py-4 px-6">Grossa / Rústica (térmica)</td>
+                <td class="py-4 px-6 font-medium">Carga, guarda, ponchos, tração</td>
+              </tr>
+              <tr class="hover:bg-earth-50 transition-colors">
+                <td class="py-4 px-6 font-bold text-earth-950 whitespace-nowrap"><span class="inline-flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-sky-600"></span> Alpaca</span></td>
+                <td class="py-4 px-6"><span class="badge-pill bg-emerald-100 text-emerald-800">Doméstica</span></td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-medium">1,20 m – 1,50 m</td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-semibold">50 – 85 kg</td>
+                <td class="py-4 px-6">Curtas, retas e triangulares</td>
+                <td class="py-4 px-6 text-sky-800 font-semibold">Muito fina, sedosa, 22 cores</td>
+                <td class="py-4 px-6 font-medium">Vestuário de luxo, fios de exportação</td>
+              </tr>
+              <tr class="bg-earth-50/40 hover:bg-earth-50 transition-colors">
+                <td class="py-4 px-6 font-bold text-earth-950 whitespace-nowrap"><span class="inline-flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Vicunha</span></td>
+                <td class="py-4 px-6"><span class="badge-pill bg-amber-100 text-amber-800">Selvagem</span></td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-medium">1,00 m – 1,20 m</td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-semibold">35 – 55 kg</td>
+                <td class="py-4 px-6">Médias e delicadas</td>
+                <td class="py-4 px-6 text-amber-800 font-bold">A mais cara e fina do mundo</td>
+                <td class="py-4 px-6 font-medium">Preservação, tosquia ritual Chaccu</td>
+              </tr>
+              <tr class="hover:bg-earth-50 transition-colors">
+                <td class="py-4 px-6 font-bold text-earth-950 whitespace-nowrap"><span class="inline-flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-stone-500"></span> Guanaco</span></td>
+                <td class="py-4 px-6"><span class="badge-pill bg-stone-200 text-stone-800">Selvagem</span></td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-medium">1,80 m – 1,90 m</td>
+                <td class="py-4 px-6 whitespace-nowrap font-mono font-semibold">90 – 140 kg</td>
+                <td class="py-4 px-6">Eretas e alertas</td>
+                <td class="py-4 px-6">Curta e áspera (dupla pelagem)</td>
+                <td class="py-4 px-6 font-medium">Fauna ecológica nativa, sobrevivência</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: ONDE VIVEM? HABITAT, DISTRIBUIÇÃO & ECOLOGIA -->
+    <section id="habitat" class="scroll-mt-24 space-y-8">
+      <div class="border-b border-earth-200 pb-5">
+        <span class="text-xs uppercase tracking-widest font-bold text-andean-teal">Geografia &amp; Ecossistema</span>
+        <h3 class="text-3xl font-serif font-bold text-earth-950">3. Onde Vivem? Hábitat, Altiplanos e Baixo Impacto Ecológico</h3>
+        <p class="text-sm text-earth-600 mt-1 max-w-3xl">
+          Integrando o infográfico original de distribuição geográfica e as adaptações ecofisiológicas que tornam a criação de lhamas um modelo de sustentabilidade.
+        </p>
+      </div>
+
+      <!-- Destaque do Infográfico Fornecido + Explicações -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Imagem 4 em destaque com zoom visual elegante -->
+        <div class="lg:col-span-7 rounded-3xl overflow-hidden shadow-lg border border-earth-200/80 bg-white">
+          <!-- Infográfico "Onde vivem?" em HTML (texto legível em qualquer tela) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2">
+            <div class="relative overflow-hidden bg-[#F9F4E8] p-6 sm:p-8 flex flex-col">
+              <h4 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-earth-800">Onde vivem?</h4>
+              <ul class="mt-4 space-y-2.5 text-sm font-semibold text-earth-800 leading-snug list-disc pl-5 marker:text-earth-700">
+                <li>As lhamas são animais domesticados, criados há milhares de anos.</li>
+                <li>Sua origem está na Cordilheira dos Andes, na América do Sul.</li>
+                <li>Vivem em ambientes de altitude, frios e secos, com vegetação rasteira.</li>
+              </ul>
+              <div class="relative mt-6 flex-1 flex items-end justify-center min-h-[220px]">
+                <svg class="absolute -bottom-8 -left-8 -right-8 w-[calc(100%+4rem)] h-24 text-earth-300/70" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true">
+                  <path fill="currentColor" d="M0 30 C 80 10, 140 60, 220 70 S 360 60, 400 80 L 400 100 L 0 100 Z"></path>
+                </svg>
+                <figure class="relative z-10 flex flex-col items-center">
+                  <img src="assets/mapa-andes.png" alt="Mapa da América do Sul destacando a Cordilheira dos Andes" class="h-56 w-auto">
+                  <figcaption class="mt-2 inline-flex items-center gap-1.5 text-[11px] font-semibold text-earth-700">
+                    <span class="w-2.5 h-2.5 rounded-sm bg-[#C2662D]"></span> Cordilheira dos Andes
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="relative min-h-[260px]">
+              <img src="F78F7022-7D5A-4CDC-9D2A-B47D9FD43CD4.jpg" alt="Rebanho de lhamas e alpacas no altiplano com vulcões nevados ao fundo" class="absolute inset-0 w-full h-full object-cover">
+            </div>
+          </div>
+          <div class="p-6 bg-white space-y-3">
+            <div class="flex items-center gap-2 text-andean-clay font-bold text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+              <span>Principais Países de Ocorrência</span>
+              <span class="ml-auto text-[11px] font-mono font-normal text-earth-500 hidden sm:inline">América do Sul • Andes Centrais</span>
+            </div>
+            <p class="text-xs text-earth-700 leading-relaxed">
+              <strong>Peru, Bolívia, norte do Chile e noroeste da Argentina</strong>, além de partes do Equador. Por ser 100% doméstica, não existe lhama selvagem isolada na natureza, estando presente onde há assentamentos humanos e sistemas pastoris de altitude.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 Cartões de Princípios Ecológicos Únicos -->
+        <div class="lg:col-span-5 space-y-4">
+          
+          <div class="p-5 rounded-2xl bg-white border border-earth-200 shadow-2xs space-y-2">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">🌱</span>
+              <div>
+                <h5 class="text-sm font-bold text-earth-900">Pastejo sem Arrancar a Raiz</h5>
+                <span class="text-[11px] text-earth-500">Corte com dentes incisivos inferiores e placa dura superior</span>
+              </div>
+            </div>
+            <p class="text-xs text-earth-600 leading-relaxed">
+              Diferente de bovinos e equinos que muitas vezes arrancam o tufo com raízes, a lhama apara apenas as pontas das gramíneas. Isso permite que as pastagens de altitude se regenerem rapidamente sem desertificação.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-earth-200 shadow-2xs space-y-2">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">🐾</span>
+              <div>
+                <h5 class="text-sm font-bold text-earth-900">Coxim Plantar Macio (Sem Casco Rígido)</h5>
+                <span class="text-[11px] text-earth-500">Almofadas macias protegem o solo contra erosão</span>
+              </div>
+            </div>
+            <p class="text-xs text-earth-600 leading-relaxed">
+              As patas das lhamas possuem almofadas macias que distribuem o peso suavemente sobre os terrenos íngremes e frágeis dos Andes. Não provocam compactação de solo nem voçorocas, preservando as encostas.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-white border border-earth-200 shadow-2xs space-y-2">
+            <div class="flex items-center gap-3">
+              <span class="w-8 h-8 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">💧</span>
+              <div>
+                <h5 class="text-sm font-bold text-earth-900">Eficiência Hídrica Superior</h5>
+                <span class="text-[11px] text-earth-500">Herança fisiológica dos camelos</span>
+              </div>
+            </div>
+            <p class="text-xs text-earth-600 leading-relaxed">
+              Rins altamente eficientes e capacidade de concentrar urina permitem que passem dias obtendo a maior parte de sua água metabólica diretamente do orvalho e dos tecidos vegetais que pastam.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- FOTO 5: PAISAGEM ANDINA DO HABITAT & PAINEL DE INTERAÇÕES ECOLÓGICAS -->
+      <div class="bg-white rounded-3xl border border-earth-200 p-5 sm:p-8 shadow-xs space-y-8">
+        <div class="flex items-center justify-between flex-wrap gap-4 border-b border-earth-100 pb-4">
+          <h4 class="text-xl font-bold font-serif text-earth-950 flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-andean-teal"></span>
+            Interações Ecológicas no Ecossistema de Altitude
+          </h4>
+          <span class="text-xs text-earth-500 font-mono">Bioma Puna • 2.500m a 4.500m altitude</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-xs">
+          
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <span class="font-bold text-andean-teal flex items-center gap-1.5 text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              Mutualismo Ruminal (C1, C2, C3)
+            </span>
+            <p class="text-earth-700 leading-relaxed">
+              Simbiose obrigatória com bactérias, protozoários e fungos que digerem celulose dura e fibrosa das plantas andinas, aproveitando nitrogênio que outros herbívoros eliminariam.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <span class="font-bold text-andean-clay flex items-center gap-1.5 text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+              Predação e Alerta Coletivo
+            </span>
+            <p class="text-earth-700 leading-relaxed">
+              Predadas por pumas (<em class="font-serif">Puma concolor</em>) e raposas-andinas (filhotes). Sua resposta é o alarme sonoro característico de alta frequência e investida física protetora.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <span class="font-bold text-andean-gold flex items-center gap-1.5 text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+              Estrumeiras (Ilhas de Biodiversidade)
+            </span>
+            <p class="text-earth-700 leading-relaxed">
+              Defecam comunitariamente no mesmo local (letrinas). Essas áreas acumulam matéria orgânica concentrada que fertiliza solos de altitude pobres, gerando nichos para flora rara.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <span class="font-bold text-earth-800 flex items-center gap-1.5 text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+              Dispersão de Sementes (Endozoocoria)
+            </span>
+            <p class="text-earth-700 leading-relaxed">
+              Ao ingerirem frutos e sementes em vales e pastagens, depositam-nas viáveis e adubadas quilômetros adiante, viabilizando a manutenção da flora andina em relevos íngremes.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <span class="font-bold text-emerald-700 flex items-center gap-1.5 text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path></svg>
+              Partição de Nicho (Menor Competição)
+            </span>
+            <p class="text-earth-700 leading-relaxed">
+              Consomem arbustos lenhosos e pasto seco de média altura, evitando competição direta com alpacas (que demandam grama macia de áreas úmidas/bofedales) e ovinos.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <span class="font-bold text-purple-700 flex items-center gap-1.5 text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+              Simbiose Protetiva com Rebanhos
+            </span>
+            <p class="text-earth-700 leading-relaxed">
+              Seu instinto territorial inato faz com que adotem grupos de ovelhas e cabras, enfrentando ativamente canídeos e reduzindo perdas de produtores sem armas químicas ou armadilhas.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-[21/9] border border-earth-200 shadow-inner">
+          <img src="71A0E8D8-9F11-4C8C-A857-4C16949C930E.jpg" alt="Vale Andino com rio e altiplano" class="w-full h-full object-cover object-[center_60%]">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex items-end p-6">
+            <div class="text-white space-y-1">
+              <span class="text-xs uppercase font-mono text-andean-gold tracking-widest">Altiplano Andino</span>
+              <p class="text-sm font-medium">Bofedales e vegetação rasteira adaptada a altitudes superiores a 3.800 metros.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 4: FISIOLOGIA, COMPORTAMENTO & REPRODUÇÃO -->
+    <section id="comportamento-reproducao" class="scroll-mt-24 space-y-8">
+      <div class="border-b border-earth-200 pb-5">
+        <span class="text-xs uppercase tracking-widest font-bold text-andean-clay">Ciclo Biológico &amp; Fisiologia Reprodutiva</span>
+        <h3 class="text-3xl font-serif font-bold text-earth-950">4. Comportamento, Nutrição Gástrica e Reprodução</h3>
+        <p class="text-sm text-earth-600 mt-1 max-w-3xl">
+          Particularidades vitais: ovulação induzida pelo coito, gestação longa de quase um ano, parto diurno adaptativo e estômago tricompartimentado.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Fisiologia Digestória (C1, C2, C3) -->
+        <div class="lg:col-span-6 bg-white rounded-3xl p-5 sm:p-8 border border-earth-200 shadow-sm space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-2xl bg-amber-100 text-amber-900 flex items-center justify-center font-bold">
+              🌿
+            </div>
+            <div>
+              <h4 class="font-bold text-earth-950 text-lg">Digestão dos 3 Compartimentos (Pseudoruminantes)</h4>
+              <span class="text-xs text-earth-500">Diferença em relação aos bovinos (4 compartimentos)</span>
+            </div>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-earth-50 border border-earth-200/60">
+              <span class="font-bold text-andean-clay block text-sm mb-1">Câmara C1 (83% do volume)</span>
+              <p class="text-earth-700 leading-relaxed">
+                Grande cuba de fermentação anaeróbica rica em microbiota simbiótica. Realiza contrações vigorosas para misturar e amolecer fibras rústicas com auxílio de glândulas saculares secretoras de bicarbonato.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-earth-50 border border-earth-200/60">
+              <span class="font-bold text-andean-teal block text-sm mb-1">Câmara C2 (6% do volume)</span>
+              <p class="text-earth-700 leading-relaxed">
+                Compartimento intermediário que filtra partículas, continua a ação tamponante e permite a re-mastigação e ruminação do bolo alimentar.
+              </p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-earth-50 border border-earth-200/60">
+              <span class="font-bold text-earth-900 block text-sm mb-1">Câmara C3 (11% do volume)</span>
+              <p class="text-earth-700 leading-relaxed">
+                Tubo alongado onde os 4/5 iniciais absorvem água e eletrólitos, e o quinto final atua como o verdadeiro estômago ácido (homólogo ao abomaso bovino), digerindo proteínas e bactérias sintetizadas no C1.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cuidados Críticos de Nutrição -->
+          <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200 text-xs space-y-1.5">
+            <span class="font-bold text-rose-800 flex items-center gap-1.5">
+              ⚠️ Alertas Toxicológicos Veterinários
+            </span>
+            <p class="text-rose-900 leading-relaxed">
+              <strong>Sensibilidade extrema ao Cobre (Cu):</strong> Camelídeos acumulam cobre no fígado mais facilmente que bovinos, predispondo à intoxicação cúprica hemolítica fatal. <em>Nunca utilize suplementos minerais de ovinos ou bovinos formulados com alto teor de cobre livre!</em>
+            </p>
+            <p class="text-rose-900 leading-relaxed">
+              <strong>Proibição de Ionóforos:</strong> Monensina e lasalocida provocam cardiomiopatia e morte súbita em lhamas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Reprodução & Ciclo de Vida -->
+        <div class="lg:col-span-6 bg-white rounded-3xl p-5 sm:p-8 border border-earth-200 shadow-sm space-y-6">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-2xl bg-sky-100 text-sky-900 flex items-center justify-center font-bold">
+              🧬
+            </div>
+            <div>
+              <h4 class="font-bold text-earth-950 text-lg">Reprodução &amp; Ciclo Neonatal</h4>
+              <span class="text-xs text-earth-500">Mecanismos adaptativos únicos</span>
+            </div>
+          </div>
+
+          <!-- Linha do Tempo / Métricas Reprodutivas -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3.5 rounded-xl bg-earth-50 border border-earth-200/80">
+              <span class="text-earth-500 block mb-0.5">Tipo de Ovulação</span>
+              <span class="font-bold text-earth-900 text-sm">Ovulação Induzida</span>
+              <p class="text-[11px] text-earth-600 mt-1">Estimulada mecanicamente e pelo fator NGF presente no sêmen durante a cópula.</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-earth-50 border border-earth-200/80">
+              <span class="text-earth-500 block mb-0.5">Tempo de Gestação</span>
+              <span class="font-bold text-andean-clay text-sm">Média de 342 dias</span>
+              <p class="text-[11px] text-earth-600 mt-1">Quase 11,5 meses de gestação. Filhote único ("cria").</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-earth-50 border border-earth-200/80">
+              <span class="text-earth-500 block mb-0.5">Puberdade vs Cobertura</span>
+              <span class="font-bold text-earth-900 text-sm">10-12m → 24 meses</span>
+              <p class="text-[11px] text-earth-600 mt-1">Atinge puberdade cedo, mas cobertura só é recomendada aos 2 anos (desenvolvimento pélvico).</p>
+            </div>
+
+            <div class="p-3.5 rounded-xl bg-earth-50 border border-earth-200/80">
+              <span class="text-earth-500 block mb-0.5">Horário do Parto</span>
+              <span class="font-bold text-emerald-700 text-sm">Diurno (08h às 14h)</span>
+              <p class="text-[11px] text-earth-600 mt-1">Adaptação evolutiva para que o filhote seque sob o sol antes do congelamento noturno andino.</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-100/70 border border-earth-200 text-xs space-y-2">
+            <span class="font-bold text-earth-900 flex items-center gap-1.5">
+              🍼 Colostro e Cuidados com o Filhote (Cria)
+            </span>
+            <p class="text-earth-700 leading-relaxed">
+              O filhote nasce com cerca de 8 a 12 kg e deve mamar o colostro nas primeiras 4 a 6 horas para absorção passiva de imunoglobulinas. O desmame natural ocorre entre 5 a 7 meses. As mães são extremamente zelosas, emitindo vocalizações guturais ("humming") para acalmar o filhote.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO 5: CRIAÇÃO, MANEJO, USOS E POTENCIAL NO BRASIL -->
+    <section id="criacao-manejo" class="scroll-mt-24 space-y-8">
+      <div class="border-b border-earth-200 pb-5">
+        <span class="text-xs uppercase tracking-widest font-bold text-andean-teal">Zootecnia &amp; Aplicações Rurais</span>
+        <h3 class="text-3xl font-serif font-bold text-earth-950">5. Criação, Usos Zootécnicos e Manejo no Brasil</h3>
+        <p class="text-sm text-earth-600 mt-1 max-w-3xl">
+          Por que criar lhamas? Da proteção de rebanhos de ovinos à terapia assistida e produção de lã rústica em regiões serranas brasileiras.
+        </p>
+      </div>
+
+      <!-- Destaque: Lhama de Guarda (Foto 6) -->
+      <div class="bg-white rounded-3xl border border-earth-200 overflow-hidden shadow-sm">
+        <!-- Infográfico "Cuidado que acompanha cada etapa" em HTML -->
+        <div class="grid grid-cols-1 md:grid-cols-2 border-b border-earth-200">
+          <div class="relative overflow-hidden bg-[#F9F4E8] p-6 sm:p-10 flex flex-col justify-center gap-5">
+            <h4 class="relative z-10 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.05] text-earth-800">Cuidado que acompanha cada etapa</h4>
+            <p class="relative z-10 text-base sm:text-lg font-semibold text-earth-700 leading-snug max-w-md">
+              Nutrição equilibrada, água limpa e assistência veterinária são essenciais para a saúde das lhamas.
+            </p>
+            <p class="relative z-10 text-base sm:text-lg font-semibold text-earth-700 leading-snug max-w-md pb-10">
+              Do pasto aos primeiros dias de vida da cria, o manejo atento faz diferença.
+            </p>
+            <svg class="absolute bottom-0 left-0 w-full h-20 text-earth-400/60" viewBox="0 0 400 80" preserveAspectRatio="none" aria-hidden="true">
+              <path fill="currentColor" d="M0 20 C 90 10, 170 70, 400 55 L 400 80 L 0 80 Z"></path>
+            </svg>
+          </div>
+          <div class="relative min-h-[300px] md:min-h-[420px]">
+            <img src="71926ee4-c799-47ea-b006-6a328554359d.jfif" alt="Lhama de guarda junto a ovelhas e cabras no pasto" class="absolute inset-0 w-full h-full object-cover object-[65%_center]">
+          </div>
+        </div>
+        <div class="p-5 sm:p-8 space-y-4 max-w-5xl mx-auto">
+          <span class="text-xs font-bold uppercase tracking-wider text-andean-clay">Instinto Territorial Único</span>
+          <h4 class="text-2xl font-serif font-bold text-earth-950">O Papel da Lhama como Animal de Guarda</h4>
+          <p class="text-xs text-earth-700 leading-relaxed">
+            Propriedades rurais utilizam amplamente lhamas para guardar ovelhas, cabras e aves contra canídeos selvagens, coiotes e raposas. Ao identificar um predador, a lhama emite um som estridente de alarme, encara a ameaça de cabeça erguida, corre em sua direção e desfecha coices e patadas mortais com suas patas musculosas.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs pt-2">
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200">
+              <span class="font-bold text-emerald-800 block mb-0.5">✅ Vantagens sobre cães de guarda:</span>
+              <ul class="text-earth-600 space-y-1 list-disc list-inside">
+                <li>Come a mesma pastagem do rebanho (sem ração cara).</li>
+                <li>Não exige treinamento complexo nem cercas de alta contenção.</li>
+                <li>Instinto protetor natural e vínculo imediato com o gado menor.</li>
+              </ul>
+            </div>
+            <div class="p-3 rounded-xl bg-earth-50 border border-earth-200">
+              <span class="font-bold text-rose-800 block mb-0.5">⚠️ Regra de ouro do manejo:</span>
+              <p class="text-earth-600">
+                Utiliza-se <strong>um único macho castrado</strong> (ou fêmea não lactante) por lote. Duas lhamas juntas socializam entre si e ignoram as ovelhas!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outros Usos: Lã, Terapia e Pet -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white rounded-3xl p-6 border border-earth-200 shadow-2xs space-y-3">
+          <div class="w-10 h-10 rounded-2xl bg-earth-100 flex items-center justify-center text-xl">
+            🧶
+          </div>
+          <h5 class="text-base font-bold text-earth-950 font-serif">Lã &amp; Artesanato Térmico</h5>
+          <p class="text-xs text-earth-600 leading-relaxed">
+            Fibra oca com excelente isolamento térmico, sem lanolina (hipoalergênica). Perfeita para ponchos andinos, casacos pesados, tapetes, mantas artesanais e fiação rústica de alto valor afetivo.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-earth-200 shadow-2xs space-y-3">
+          <div class="w-10 h-10 rounded-2xl bg-purple-100 flex items-center justify-center text-xl">
+            🩺
+          </div>
+          <h5 class="text-base font-bold text-earth-950 font-serif">Pet Exótico &amp; Terapia Assistida</h5>
+          <p class="text-xs text-earth-600 leading-relaxed">
+            Extremamente silenciosas, dóceis e higiênicas (usam o mesmo canto para fezes). Por não morderem agressivamente e terem olhar expressivo, são utilizadas em asilos e centros de reabilitação motora e psicológica.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 border border-earth-200 shadow-2xs space-y-3">
+          <div class="w-10 h-10 rounded-2xl bg-emerald-100 flex items-center justify-center text-xl">
+            🇧🇷
+          </div>
+          <h5 class="text-base font-bold text-earth-950 font-serif">Criação de Lhamas no Brasil</h5>
+          <p class="text-xs text-earth-600 leading-relaxed">
+            Totalmente viável, com destaque para as <strong>Serras Gaúchas, Catarinenses e Mantiqueira</strong> (RS, SC, PR, SP, MG). Climas com noites frescas favorecem seu bem-estar, exigindo apenas sombreamento e tosquia anual antes do verão.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- FAQ Prático de Manejo em Cativeiro -->
+      <div class="bg-white rounded-3xl border border-earth-200 p-5 sm:p-8 shadow-xs space-y-6">
+        <h4 class="text-xl font-bold font-serif text-earth-950 flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-andean-gold"></span>
+          Perguntas Frequentes de Manejo e Instalações Rurais
+        </h4>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-earth-700">
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <h6 class="font-bold text-earth-950 text-sm">Precisam de muito espaço? Pasto ou curral?</h6>
+            <p class="leading-relaxed">
+              Podem ser criadas na proporção de cerca de 4 a 6 lhamas por hectare em pastagens bem manejadas. Precisam de acesso contínuo a piquetes abertos; confinamento integral em baias gera estresse esteriotipado e problemas articulares.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <h6 class="font-bold text-earth-950 text-sm">Pode criar machos e fêmeas juntos?</h6>
+            <p class="leading-relaxed">
+              Não de forma permanente! Machos inteiros perseguem constantemente fêmeas e machos jovens, podendo causar abortos ou brigas territoriais. Separam-se lotes de fêmeas reprodutoras, machos castrados/rebanho e machos reprodutores em piquetes distintos.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <h6 class="font-bold text-earth-950 text-sm">Como é feita a reprodução? Inseminação ou monta?</h6>
+            <p class="leading-relaxed">
+              Predomina a <strong>monta natural controlada</strong>. Como a fêmea deita em posição de <em>kush</em> durante a cópula (que dura de 15 a 45 minutos) e o colo uterino tem anéis espirais complexos, a inseminação artificial requer equipamentos laparoscópicos de alto custo.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-earth-50 border border-earth-200/70 space-y-2">
+            <h6 class="font-bold text-earth-950 text-sm">Rentabilidade comercial e custos</h6>
+            <p class="leading-relaxed">
+              O custo de alimentação é muito baixo comparado a equinos (apenas 1,8% a 2% do peso vivo em matéria seca por dia). O retorno financeiro dá-se pela venda de matrizes e reprodutores selecionados, serviços de guarda, animais para ecoturismo e artesanato fino de lã.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- BANNER DE CONCLUSÃO / CURIOSIDADE FINAL -->
+    <section class="bg-gradient-to-r from-earth-900 via-earth-800 to-andean-teal text-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="space-y-3 max-w-2xl text-center md:text-left">
+        <span class="badge-pill bg-andean-gold text-earth-950 font-bold uppercase tracking-wider">Curiosidade Andina</span>
+        <h4 class="text-2xl md:text-3xl font-serif font-bold">Por que as lhamas cospem?</h4>
+        <p class="text-sm text-earth-200 leading-relaxed font-normal">
+          O cuspe da lhama não é saliva comum, mas sim conteúdo regurgitado da primeira câmara gástrica (C1), com odor ácido e esverdeado. Trata-se de um mecanismo de defesa e hierarquia social usado para repelir outros membros na disputa por comida ou dizer "não" às investidas indesejadas de machos. Com humanos bem socializados, cospem rarissimamente.
+        </p>
+      </div>
+
+      <div class="flex-shrink-0">
+        <a href="#quem-sao" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-white text-earth-900 font-bold text-sm shadow-md hover:bg-earth-100 transition-colors">
+          <span>Voltar ao Topo</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ COMPLETO -->
+  <footer class="bg-earth-900 text-earth-400 py-12 border-t border-earth-800">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-center md:text-left">
+      <div class="flex flex-col sm:flex-row items-center gap-3">
+        <div class="w-8 h-8 shrink-0 rounded-lg bg-andean-clay flex items-center justify-center text-white font-serif font-bold">L</div>
+        <div>
+          <span class="font-bold text-white block">Portal &amp; Dossiê Camelídeos Sul-Americanos</span>
+          <span>Conteúdo zootécnico e taxonômico para criadores, biólogos e veterinários.</span>
+        </div>
+      </div>
+      <div class="text-earth-500 font-mono">
+        Fontes: Taxonomia ICZN • Literatura Zootécnica Andina • Manejo Ruminantes Alternativos
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+</body></html>
